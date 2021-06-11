@@ -4,19 +4,37 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private Rigidbody2D rb;
+    //int wholeNumber = 16;
+    //float decimalNumber = 4.54f;
+    //string text = "blabla";
+    //bool boolean = true; 
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        //Debug.Log("Hello, world!"); 
+        //Debug.Log("Hello, world!");
+
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         //Debug.Log("update");
-        if (Input.GetKey("space"))
+
+        float dirX = Input.GetAxisRaw("Horizontal"); //direction X axis
+        // press left -1, press right +1. joystick will have values in between
+        // GetAxisRaw goes back to 0 after releasing immediately, GetAxis doesn't
+
+        rb.velocity = new Vector2(dirX * 7f, rb.velocity.y); //horizontal and vertical
+            // vector 2 for 2D game, vector 3 for 3D game
+            // multiply because if dirX is -1, velocity will be negative and move left. cleaner than using if/else
+            // multiplying also provide joystick support. if dirX = -0.5 then move by -3.5
+            // rb.velocity.y instead of 0 --> the rigidbody value it has the frame before
+        if (Input.GetButtonDown("Jump"))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 7, 0); 
+           rb.velocity = new Vector2(rb.velocity.x, 14f); 
         }
     }
 }
