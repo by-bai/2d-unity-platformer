@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private Animator anim;
+
     //int wholeNumber = 16;
     //float decimalNumber = 4.54f;
     //string text = "blabla";
@@ -16,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
         //Debug.Log("Hello, world!");
 
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>(); 
     }
 
     // Update is called once per frame
@@ -35,6 +38,20 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
            rb.velocity = new Vector2(rb.velocity.x, 14f); 
+        }
+
+        if (dirX > 0f)
+        {
+            anim.SetBool("running", true);
+        }
+        else if (dirX < 0f)
+        {
+            anim.SetBool("running", true);
+        }
+        else
+        {
+            //0
+            anim.SetBool("running", false);
         }
     }
 }
