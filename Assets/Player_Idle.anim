@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player_Ide
+  m_Name: Player_Idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -17,26 +17,86 @@ AnimationClip:
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
-  m_PPtrCurves: []
-  m_SampleRate: 60
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: -7058467646113100952, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    - time: 0.055555556
+      value: {fileID: 2523797164572975851, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    - time: 0.11111111
+      value: {fileID: -4650994402877758004, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    - time: 0.16666667
+      value: {fileID: -4072738081349665851, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    - time: 0.22222222
+      value: {fileID: 3370964573498756280, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    - time: 0.2777778
+      value: {fileID: -2772276555738347064, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    - time: 0.33333334
+      value: {fileID: -5336905382064706099, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    - time: 0.3888889
+      value: {fileID: -2443904550733242951, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    - time: 0.44444445
+      value: {fileID: 6973490911263044968, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    - time: 0.5
+      value: {fileID: 8447750496836027906, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    - time: 0.5555556
+      value: {fileID: -3108095687312084266, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    - time: 0.6111111
+      value: {fileID: -1832816257785776358, guid: 8ab797a9bcec0493dbb133296b959e7d,
+        type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  m_SampleRate: 18
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: -7058467646113100952, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
+    - {fileID: 2523797164572975851, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
+    - {fileID: -4650994402877758004, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
+    - {fileID: -4072738081349665851, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
+    - {fileID: 3370964573498756280, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
+    - {fileID: -2772276555738347064, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
+    - {fileID: -5336905382064706099, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
+    - {fileID: -2443904550733242951, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
+    - {fileID: 6973490911263044968, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
+    - {fileID: 8447750496836027906, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
+    - {fileID: -3108095687312084266, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
+    - {fileID: -1832816257785776358, guid: 8ab797a9bcec0493dbb133296b959e7d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.6666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -50,4 +110,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
